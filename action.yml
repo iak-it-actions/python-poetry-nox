@@ -1,0 +1,10 @@
+name: "Run nox from poetry"
+description: "Run nox from poetry"
+
+runs:
+  using: composite
+
+  steps:
+    - name: run nox
+      run: poetry run nox
+      shell: bash
